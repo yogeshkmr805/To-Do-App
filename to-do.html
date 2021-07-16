@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do App</title>
+
+        <style>
+            * {
+                font-family: 'Ubuntu', sans-serif;
+                margin: 0;
+                padding: 0;
+
+            }
+
+
+            section {
+                background-color: rgb(241, 170, 89);
+                height: auto;
+                width: 500px;
+                padding: 10px;
+                margin-left: 470px;
+                margin-top: 100px;
+                margin-top: 20px;
+                border: 3px solid black;
+                border-radius: 10px;
+
+            }
+
+            .butn {
+                border: 2px solid black;
+                padding: 3px;
+                margin: 10px;
+                border-radius: 4px;
+            }
+
+            input,
+            textarea {
+                border: 2px solid black;
+                border-radius: 3px;
+                padding: 3px;
+                margin: 5px;
+                height: 50px;
+                width: 300px;
+            }
+            table,
+            td {
+                border: 1px solid black;
+            }
+            div{
+                margin-left: 100px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <main>
+            <section id="list">
+                <div id="titl">
+                    <h1>To Do App</h1>
+                </div>
+                <div id="add-work">
+                    <input type="text" id='job-title' placeholder="Job Title" required>
+                    <br>
+                    <textarea name="desc" id="desc" placeholder="Description"></textarea>
+                    <br>
+                    <button type="submit" id="btn" class="butn">Add Job</button>
+                </div>
+            </section>
+            <section>
+
+                <div id="table">
+                    <table id="tab">
+
+                        <tr>
+                            <th>SNo.</th>
+                            <th>Job Title</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <tbody id='tbody'></tbody>
+                    </table>
+                </div>
+                <div id="clear-list">
+                    <button type="button" id="clear" class="butn" onclick="clearlist()">Clear List</button>
+                </div>
+
+            </section>
+        </main>
+    </body>
+    <script src="to-do.js"></script>
+
+</html>
